@@ -423,6 +423,151 @@ img
 					a
 						&:hover, &:focus
 							opacity: 0.9
+	&--toning
+		max-width: 1240px
+		margin: 0 auto
+		&__title
+			font-size: 48px
+			line-height: 1
+			font-weight: 400
+			margin-bottom: 50px
+		.h2
+			font-size: 48px
+			line-height: 1
+			font-weight: 400
+			margin-bottom: 50px
+		&__callback, &__prices
+			margin-bottom: 100px
+		&__manufacturer
+			margin-bottom: 100px
+			&--wrapper
+				display: flex
+				gap: 40px
+			&--item
+				display: flex
+				flex-direction: column
+				gap: 23px
+				max-width: 250px
+				&:first-child
+					max-width: 235px
+				&:last-child
+					max-width: 190px
+			&--text
+				color: #A8B1B7
+				font-size: 13px
+				line-height: 15px
+		&__price
+			margin-bottom: 100px
+			&--wrapper 
+				display: flex
+				gap: 17px 0
+			&--block
+				display: flex
+				flex-direction: column
+				flex: 1 1 25%
+				&:first-child
+					.inner--toning__price--block__title
+						padding-left: 17px
+				&__title
+					min-height: 46px
+					border-bottom: 1px solid #D5DBE1
+					padding-bottom: 17px
+					margin-bottom: 17px
+					display: flex
+					align-items: center
+					gap: 10px
+					span
+						color: #40464C
+					img
+						max-height: 28px
+						max-width: 73px
+						filter: grayscale(1)
+						&.car
+							max-width: 35px
+					&:first-child
+						span
+							font-weight: 500
+							font-size: 15px
+							min-height: 40px
+							display: flex
+							align-items: center
+			&--footer
+				font-size: 15px
+				color: #696C71
+		&__kinds
+			margin-bottom: 100px
+			&--wrapper
+				display: flex
+				flex-direction: column
+				gap: 50px
+			&--item
+				display: flex
+				gap: 50px
+				justify-content: space-between
+				align-items: center
+			&--text
+				display: flex
+				flex-direction: column
+				gap: 27px
+				max-width: 491px
+				.h3
+					font-size: 30px
+					line-height: 36px
+					font-weight: 400
+				p
+					font-size: 18px
+					line-height: 25px
+	
+.inner
+	&--blog 
+		&__wrapper
+			&.long 
+				margin-bottom: 100px
+				h2, .h2
+					font-size: 33px
+					line-height: 1
+				ul
+					padding-left: 25px
+				.inner--blog__left
+					&--date
+						margin-bottom: 30px
+						font-size: 24px
+						line-height: 1
+						margin-bottom: 30px
+					.h1
+						font-size: 64px
+						line-height: 70px
+						margin-bottom: 50px
+					&--info
+						display: flex
+						flex-direction: column
+						gap: 50px
+						.social
+							display: flex
+							gap: 13px
+							padding-top: 20px
+							border-top: 1px solid #000
+							max-width: 620px
+							&--wrapper
+								display: flex
+								gap: 18px
+					&--block 
+						display: flex
+						flex-direction: column
+						gap: 20px
+		&__another 
+			display: flex
+			flex-direction: column
+			margin-bottom: 100px
+			h2, .h2
+				font-size: 48px
+				line-height: 1
+				text-align: left
+				margin-bottom: 50px
+			&--item
+				display: flex
+				flex-direction: column
+				margin-bottom: 25px
 
 @media screen and (max-width: 1366px)
 	.inner
@@ -486,6 +631,37 @@ img
 						font-size: 14px
 					.button
 						font-size: 16px
+		&--toning
+			&__title
+				font-size: 36px
+				margin-bottom: 40px
+			.h2
+				font-size: 36px
+	.inner--blog
+		&__wrapper
+			&.long 
+				margin-bottom: 60px
+				h2
+					font-size: 24px
+				p, ul, li 
+					font-size: 14px
+					line-height: 22px
+				.inner--blog__left
+					.h1
+						font-size: 36px
+						line-height: 1.3
+						margin-bottom: 30px
+					&--info 
+						gap: 30px
+					&--block 
+						gap: 15px
+		&__another 
+			margin-bottom: 60px
+			h2, .h2
+				font-size: 32px
+				margin-bottom: 30px
+			&--item
+				margin-bottom: 15px
 
 @media screen and (max-width: 1024px)
 	.inner
@@ -548,6 +724,33 @@ img
 				&--social
 					margin-bottom: 25px
 
+@media screen and (max-width: 992px)
+	.inner
+		&--toning
+			&__title
+				font-size: 56px
+				line-height: 1
+				margin-bottom: 30px
+			.h2
+				font-size: 36px
+			&__manufacturer
+				&--wrapper
+					flex-wrap: wrap
+					gap: 50px 45px
+				&--item
+					max-width: 50%
+					flex: 1 1 calc(50% - 45px)
+					&:first-child, &:last-child
+						max-width: 100%
+			&__price
+				&--block
+					&__title
+						align-items: center
+						span
+							max-width: 150px
+							font-size: 14px
+							line-height: 18px
+
 @media screen and (max-width: 768px)
 	.inner
 		&--blog
@@ -591,6 +794,12 @@ img
 					&__item
 						flex: calc(50% - 20px)
 						max-width: 50%
+		&--toning__price
+			&--wrapper
+				flex-wrap: wrap
+			&--block
+				flex: calc(50% - 20px)
+				max-width: 50%
 
 
 @media screen and (max-width: 480px)
@@ -643,6 +852,25 @@ img
 				&--blog
 					&__item
 						gap: 20px
+		&--toning
+			.h2
+				font-size: 28px
+				line-height: 38px
+				margin-bottom: 30px
+			.h3
+				font-size: 26px
+				line-height: 31px
+			&__manufacturer--item
+				flex: 100%
+				max-width: 100%
+			&__kinds
+				&--wrapper
+					gap: 30px
+				&--item
+					flex-direction: column
+					gap: 20px
+				&--text
+					gap: 20px
 
 @media screen and (max-width: 414px)
 	.inner
@@ -658,3 +886,13 @@ img
 					&__title 
 						font-size: 16px
 						font-weight: 400
+
+.services
+	.row
+		display: flex
+	&-item 
+		background-color: #fff
+		&.not--actual
+			filter: grayscale(1)
+		&-price
+			color: #969696
