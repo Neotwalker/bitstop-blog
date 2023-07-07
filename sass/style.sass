@@ -723,6 +723,9 @@ img
 					margin-bottom: 24px
 				&--social
 					margin-bottom: 25px
+	.inner--blog__wrapper.long
+		.inner--blog__right
+			display: none
 
 @media screen and (max-width: 992px)
 	.inner
@@ -801,7 +804,6 @@ img
 				flex: calc(50% - 20px)
 				max-width: 50%
 
-
 @media screen and (max-width: 480px)
 	.inner
 		&--blog
@@ -871,6 +873,28 @@ img
 					gap: 20px
 				&--text
 					gap: 20px
+	.inner--blog
+		&__wrapper
+			&.long 
+				h2
+					line-height: 30px
+					letter-spacing: -0.02em
+				p, ul, li
+					font-size: 16px
+				ul, li
+					list-style-type: none
+					padding-left: 0
+				.inner--blog__left
+					&--date
+						margin-bottom: 10px
+					.h1
+						font-size: 32px
+						line-height: 38px
+						letter-spacing: -0.02em
+					&--info 
+						gap: 30px
+					&--block 
+						gap: 30px
 
 @media screen and (max-width: 414px)
 	.inner
